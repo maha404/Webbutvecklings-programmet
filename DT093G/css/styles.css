@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dot{
+    background-color:  #474A8A;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    border-radius: 50%;
+}
+
+#dot2{
+    background-color: #B0B3D6;
+    height: 50px;
+    width: 50px;
+    top: 27vh;
+}
+
+#dot3{
+    background-color:  #474A8A;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 40vh;
+    right: 2vh;
+}
+
+#dot4{
+    background-color:  #B0B3D6;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 40vh;
+    right: 2vh;
+}
+
+nav ul li a{
+    background-color: #787CB5;
+    display: inline-block;
+    padding: 2vh 3vh 2vh 3vh;
+    color: white;
+    margin: 1vh;
+}
+
+nav ul li{
+    display: inline-block;
+   
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-align: center;
+    background-color: #B0B3D6;
+}
+
+a:hover{
+    background-color: #474A8A;
+}
+
+.header_title, .site_title{
+    text-align: center;
+}
+
+.main_content{
+    border: dotted black 5px;
+    margin-top: 3vh;
+    margin-left:15vh;
+    margin-right: 15vh;
+}
+
+article{
+    margin: 5vh;
+}
+
+.footer{
+    margin-top:  20vh;
+    text-align: center;
+    
+}
+
+/*Formulären*/
+
+input[type=submit]{
+    padding: 1vh;
+    border: none;
+    margin-top: 2vh;
+    background-color:#787CB5;
+    color: white;
+    
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #474A8A;
+}
+
+input[type=text], input[type=number]{
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+
+
+/* Media queries -----------------------------------------------------------------> */
+@media screen and (max-width: 800px){
+
+    .main_content{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    article{
+        margin: 1.5vh;
+    }
+
+    .dot, #dot2, #dot3, #dot4{
+        display: none;
+    }
+}

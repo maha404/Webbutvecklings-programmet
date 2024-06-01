@@ -1,0 +1,128 @@
+.login, .login_title{
+    margin: auto;
+    width: 230px;
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+}
+
+.login_btn{
+    padding: 3.5%;
+    border: none;
+    background-color: rgb(65, 197, 65);
+    color: white;
+}
+
+html{
+   background-color: beige;
+   margin: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.error-msg{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    padding: 2%;
+    background-color: white;
+}
+
+main{
+    background-color: white;
+    border-radius: 2vh;
+    padding: 3vw;
+    max-width: 500px;
+    margin: auto;
+}
+
+.main_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.nav_item{
+    background-color: #4b0082;
+    padding: 1rem;
+    margin-right: 10%;
+}
+
+a:link{
+    
+    color: #000000;
+}
+
+.nav_link:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Home sidan*/
+.home-main {
+    margin-top: 3vh;
+}
+
+/*Admin sidan*/
+#admin-btn{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    background-color: #4b0082;
+    font-size: 1rem;
+
+}
+
+#admin-btn:hover{
+    background-color: #20b2aa;
+    cursor: pointer;
+}
+
+.main-content{
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2vh;
+    padding: 3vw;
+    margin-top: 2%;
+}
+
+#title{
+    padding: 0.4rem;
+    font-size: 15px;
+}
+
+
+#content{
+    width: 490px;
+    height: 200px;
+    resize: none;
+}
+
+.delete-btn{
+    background-color: #ff0000;
+    color: white;
+    padding: 0.5rem;
+    margin-right: 2%;
+    font-size: 1rem;
+}
+
+.delete-btn:hover{
+    background-color: #7a1818;
+    cursor: pointer;
+}
+
+.readmore-btn, .logout-btn{
+    background-color: #4b0082;
+    color: white;
+    padding: 0.5rem;
+    margin-right: 2%;
+    font-size: 1rem;
+}

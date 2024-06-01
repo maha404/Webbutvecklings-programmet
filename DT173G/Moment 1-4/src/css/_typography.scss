@@ -1,0 +1,27 @@
+h1 {
+    color: $pastel-purple;
+    font-size: 2rem;
+    margin-left: 2rem;
+    @include media-query (small) {
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+}
+
+h2 {
+    padding: 1rem;
+}
+
+p{
+    padding: 1rem;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+}

@@ -1,0 +1,10 @@
+
+@if $title-color == $pastel-darkpink {
+    .article2 {
+        background-color: aqua;
+    }
+}@else {
+    .article2 {
+        background-color: $pastel-darkpink;
+    }
+}

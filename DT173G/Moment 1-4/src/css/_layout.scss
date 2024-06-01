@@ -1,0 +1,23 @@
+@mixin nav-Layout {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin: 0;
+    list-style: none;
+    padding: 2rem;
+    
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    align-items: center;
+}
+
+footer {
+    background-color: $pastel-pink;
+    padding:1rem;
+    margin-top: 1rem;
+    text-align: center;
+}

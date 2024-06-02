@@ -1,0 +1,26 @@
+.homepage-header, 
+footer {
+    text-align: center;
+}
+
+.homepage-header, 
+.open-time-title {
+    @include media-query(small) {
+        font-size: 20px;
+    }
+}
+
+.open-time-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.errormsg {
+    color: rgb(216, 0, 0);
+    font-weight: bold;
+}
+
+.bookedmsg {
+    color: #418A01;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+.lunch-container {
+    width: 95%;
+    height: fit-content;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-query(small) {
+        margin: 4vh 0 4vh 0;
+        width: 100%;
+    }
+
+    @include media-query(medium) {
+        margin: 4vh 0 4vh 0;
+        width: 100%;
+    }
+}
+
+#box {
+    background-color: #31220D;
+    text-align: center;
+    color: white;
+    padding: 2% 20% 4% 20%;
+}
+
+hr {
+    color: white;
+}
+

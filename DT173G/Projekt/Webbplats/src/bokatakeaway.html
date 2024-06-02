@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Kod skriven av: Maria Halvarsson -->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style> 
+    <script src="https://kit.fontawesome.com/f2e33cb8e2.js" crossorigin="anonymous"></script>
+    <title>Boka Takeaway | Matverkstan </title>
+</head>
+<body>
+    <header class="user-header">  
+        <nav class="desktop-nav">
+            <a href="index.html"><img src="photos/logo.svg" alt="" class="logo-desktop"></a>
+            <ul class="desktop-nav-list">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="lunchmeny.html">Lunchmeny</a></li>
+                <li><a href="bokatakeaway.html">Boka Takeaway</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <a href="index.html"><img src="photos/logo.svg" alt="" class="logo-desktop"></a>
+            <a href="index.html"><img src="photos/logo-mobile.svg" alt="" class="logo-mobile"></a>
+            <i class="fa-solid fa-bars fa-xl" id="mobilenav-icon"></i>
+            <ul class="mobile-nav-list" id="nav-list">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="lunchmeny.html">Lunchmeny</a></li>
+                <li><a href="bokatakeaway.html">Boka Takeaway</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="takeaway-container">
+        <img src="photos/takeaway-desktop.png" alt="" >
+        <section>
+            <h2>Boka din takeaway hos oss!</h2>
+            <p>Boka din takeaway här nedan för att sedan hämta din mat hos oss. Vi erbjuder den mat som är dagens lunch.</p>
+            <p>Du får ett SMS när din mat är redo att hämtas, det är därför viktigt att du skriver in korrekt telefonnummer.</p>
+        </section>
+    </main>
+    <div id="menu-box" class="menu-container">
+
+    </div>
+    <form method="POST">
+        <span id="namemsg" class="errormsg"></span>
+        <br>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <span id="phonemsg" class="errormsg"></span>   
+        <br> 
+        <label for="phonenumber">Telefonummer:</label>
+        <input type="text" id="phonenumber" name="phonenumber">  
+        <br>
+        <br>
+        <span id="confirmmsg" class="bookedmsg"></span>
+        <br>
+        <button id="bookBtn">Boka</button>
+    </form>
+        
+    <footer>
+        <p> - Skräddarvägen 10, 820 75 Harmånger - <br> - Telefon: 0680-420 10 -</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@mixin media-query ($breakpoints) {
+    
+    @if($breakpoints == small) {
+        @media screen and (max-width: 360px) {
+            @content;
+        }
+    }
+
+    @if($breakpoints == medium) {
+        @media screen and (min-width: 361px) and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if($breakpoints == large) {
+        @media screen and (min-width: 769px) {
+            @content;
+        }
+    }
+
+}

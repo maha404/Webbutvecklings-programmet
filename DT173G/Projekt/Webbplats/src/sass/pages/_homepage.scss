@@ -1,0 +1,36 @@
+
+.header-picture {
+    width: 100%;
+    height: auto;
+}
+
+.open-time-box {
+    background-color: #31220D;
+    padding: 1rem;
+    color: white;
+    margin: 0 35vw 10vh 35vw;
+
+    p{
+        margin-left: 25%;
+    }
+
+    @include media-query(medium) {
+        margin: 0 10vw 20vh 10vw;
+    }
+
+    @include media-query(small) {
+        
+        margin: 0 5vw 40vh 5vw;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: separate;
+        border-spacing: 2vw;
+    
+    }
+
+
+}
+

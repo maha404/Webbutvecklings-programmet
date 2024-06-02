@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Kod skriven av: Maria Halvarsson-->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+       <h2>Admin</h2>
+    </header>
+
+    <main class="login-container">
+
+        <form method="POST" class="login-form">
+    
+            <label for="username_login">Användarnamn:</label>
+            <br>
+            <input type="text" name="username_login" id="username_login">
+            <span id="usernamemsg" class="errormsg"></span>
+            <br>
+            <br>
+            <label for="password_login">Lösenord:</label>
+            <br>
+            <input type="password" name="password_login" id="password_login">
+            <span id="passwordmsg" class="errormsg"></span>
+            <br>
+            <br>
+            <button class="login_btn" id="loginBtn" >Logga in</button>
+        </form>
+    
+    </main>
+
+    <script src="js/user.js"></script>
+</body>
+</html>

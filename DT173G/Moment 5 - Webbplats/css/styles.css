@@ -1,0 +1,52 @@
+body {
+    margin: 0 ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+header {
+    background-color: lightcoral;
+    padding: 2rem;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+hr {
+    color: black;
+}
+
+button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: rgb(156, 86, 86);
+}
+
+input {
+    margin: 0 0 2rem 0;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 2vh;
+    padding: 0.4rem;
+    color: white;
+}
+

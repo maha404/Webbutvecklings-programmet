@@ -1,0 +1,774 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header {
+    position: fixed;
+} */
+
+.mobile-nav,
+#nav-icon,
+.header-img-tablet, 
+.header-img-mobile,
+.logo-mobile {
+    display: none;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-desktop {
+    position: absolute;
+    top: 6vh;
+    left: 37vw;
+    width: 30%;
+    height: auto;
+}
+
+.header-img-desktop {
+    opacity: 0.4;
+    width: 100%;
+    height: auto;
+}
+
+.desktop-nav {
+    position: relative;
+    inset: -11.4vh 0 0 0;
+    background-color: white;
+    opacity: 0.8;
+    padding: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2rem;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.nav-list li {
+    border-right: 2px rgb(0, 0, 0) solid;
+    padding: 0 2rem 0 0;
+}
+
+a:link, 
+a:visited {
+    color: #1F9BB2;
+    text-decoration: none;  
+}
+
+a:hover{
+    color: #00687D;
+    text-decoration: underline;
+}
+
+.nav-list li:last-of-type {
+    border: none;
+}
+
+main {
+    margin: 6%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    width: 100%;
+    color: #00687D;
+    margin-top: auto;
+}
+
+/*News articles - front page*/
+
+.news-article {
+    border: solid #00687D 20px;
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    float: right;
+    margin: 0 0 53px -54px;
+    padding: 1rem;
+    position: absolute;
+    right: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.527); 
+}
+
+.news-article article {
+    margin: 1rem;
+}
+
+
+.line {
+    width: 50%;
+    background-color: black;
+}
+
+/* Single.php */
+
+.single-container {
+    margin: auto;
+    max-width: 600px;
+}
+
+.single-img {
+    display: block;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.single-article {
+    padding: 3rem;
+}
+
+/* Articles - front page*/
+.wrapper{
+    width: 40vw;
+    height: fit-content;
+}
+
+.cabin-article, 
+.cabin-article-page  {
+    border: solid #466433 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.527);
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 117px -58px;
+    text-align: center;
+    padding: 2rem;
+    color: #466433;
+}
+
+.text {
+    display: inline-block;
+}
+
+.cabin-article img, 
+.cabin-article-page img {
+    float: left;
+    width: 60%;
+    height: auto;
+}
+
+.cabin-article h2, 
+.cabin-article-page h2{
+    font-size: 30px;
+}
+
+.cabin-article hr, 
+.cabin-article-page hr {
+    width: 61%;
+}
+
+.cabin-article p, 
+.cabin-article-page p {
+    line-height: 4.5vh;
+}
+
+
+.cabin-article .button, 
+.cabin-article-page .button {
+    background-color:  #466433;
+    color: white;
+    border: none;
+    border-radius: 20px 0 20px 0;
+    padding: 1vh 3vh 1vh 3vh;
+    margin: 2vh 0 0 0;
+    font-size: 20px;
+}
+
+.cabin-article .button:hover, 
+.cabin-article-page .button:hover {
+    background-color: #A5AE9D;
+    color: black;
+    cursor: pointer;
+}
+
+/* Aside - Front-page*/
+.info-aside {
+    border-radius: 25px;
+    width: 30%;
+    height: fit-content;
+    margin: 0 0 0 0;
+    float: right;
+    position: absolute;
+    top: 190vh;
+    right: 5%;
+    background-color: #00687D;
+    padding: 2rem;
+    color: white;
+}
+
+aside h4 {
+    text-align: center;
+}
+
+/* Sommar */
+
+.underside-article {
+    margin-bottom: 15%;
+    margin-top: 3%;
+    height: fit-content;
+    width: 94%;
+    background-color: #466433;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6vh;
+}
+
+
+.picture-container {
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+}
+
+.article-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.527);
+}
+
+.article-text {
+    border: 1px solid #466433;
+    color: #466433;
+    width: 66%;
+    height: fit-content;
+    padding: 3%;
+    float: right;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.article-text h4, 
+.article-text-winter h4 {
+    margin: 0;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.article-text p, 
+.article-text-winter p{
+    font-size: 15px;
+}
+
+/* Vinter */
+.underside-article-winter {
+    margin-bottom: 15%;
+    margin-top: 3%;
+    height: fit-content;
+    width: 90%;
+    background-color:#00687D;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6vh;
+}
+
+.article-text-winter {
+    color: #00687D;
+    border: 1px solid #00687D;
+    width: 59%;
+    height: fit-content;
+    padding: 3%;
+    float: right;
+    margin: 0 3vw 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+/* Stugor */
+
+.cabin-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cabin-infobox {
+    border: 20px solid #A5AE9D;
+    width: 60%;
+    padding: 2%;
+    margin: 0 0 11vh 16vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabin-infobox h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 0 0 0 0;
+}
+
+/* Om oss / kontakt */
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-box {
+    background-color: #00687D;
+    color: white;
+    padding: 6%;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 5vh 0 0 0;
+}
+
+.about-box h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+input[type="text"], 
+input[type="email"] {
+    padding: 1%;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 20px 0 20px 0;
+    padding: 2.5vh 8vh 2.5vh 8vh;
+    margin: 3vh 0 0 0;
+    color: #00687D;
+    font-size: 20px;
+}
+
+
+
+/* Media Queries ----------> */
+/* Surfplatta ---------> */
+@media all and (max-width:834px) and (min-width:360px) {
+    
+    .desktop-nav,
+    .header-img-desktop, 
+    .header-img-mobile,
+    .logo-desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    #mobile-list {
+        display: none;
+        list-style: none;
+        background-color: #00687D;
+        padding: 2%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #mobile-list a {
+        color: white;
+    }
+
+    .mobile-nav-list li{
+        margin: 0 0 2vh 0;
+    }
+
+    .logo-mobile {
+        display: block;
+        position: absolute;
+        top: 2vh;
+        left: 37vw;
+        width: 30%;
+    }
+
+    .header-img-tablet {
+        display: block;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav-icon {
+        display: block;
+        position: absolute;
+        top: 2vw;
+        right: 3vw;
+        color: white;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+    /* Main content */
+    /* main {
+        margin: auto;
+        max-width: 400px;
+    } */
+
+    /* Wrapper */
+    .wrapper {
+        margin: 15vh 0 0 0;
+    }
+
+    /* Article */
+    .cabin-article {
+        width: 36vw;
+        height: fit-content;
+        margin: 0 20vw 40% 16vw;
+    }
+
+    .cabin-article h2 {
+        margin: 1vh 0 0 0;
+        font-size: 30px;
+    }
+
+    article p {
+        line-height: 3.6vh;
+    } 
+
+    .cabin-article img, 
+    .cabin-article-page img {
+        float: none;
+    }
+
+    article .button {
+        margin: 2vh 0 0 0;
+        font-size: 20px;
+    }
+
+    /* Aside */
+    .info-aside {
+        float: none;
+        right: 1vw;
+        position: relative;
+        width: 90%;
+        display: inline-block;
+        top: 0;
+    }
+
+    .news-article {
+        float: none;
+        left: 24vw;
+        position: relative;
+        display: inline-block;
+        width: 50%;
+    }
+
+    /* Sommar & Vinter*/
+    .article-img {
+        width: 300%;
+        position: relative;
+        top: 6vh;
+        z-index: -1;
+        margin: 0 10vw 0 30vw;
+    }
+
+    .underside-article, 
+    .underside-article-winter{
+        margin: 10vh 5vw 0 0;
+        padding: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-text, 
+    .article-text-winter{
+        width: 61%;
+        margin: 0 9vw 0 17vw;
+        background-color: white;
+    }
+
+    .article-text h4, 
+    .article-text-winter h4{
+        font-size: 25px;
+    }
+
+    .article-text p, 
+    .article-text p {
+        font-size: 15px;
+    }
+
+    .picture-container {
+        display: inline-block;
+        width: 10vw;
+        height: 30vw;
+    }
+
+    /* Stugor */
+    .cabin-container {
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabin-article-page {
+        width: 36vw;
+        height: fit-content;
+        margin: 0 0 20% -39%;
+    }
+
+    .cabin-article h2 {
+        font-size: 20px;
+    }
+    
+
+    /* Om oss/kontakt*/
+    .about-box {
+        border-radius: 0 0 0 0;
+        font-size: 15px;
+    }
+
+    .about-box h2 {
+        font-size: 35px;
+    }
+
+    input[type="submit"] {
+        
+        padding: 2.5vh 8vh 2.5vh 8vh;
+        
+    }
+
+    /* Footer 
+    footer {
+        top: 320vh;
+    } */
+}
+
+@media all and (max-width: 1492px) and (min-width:835px) {
+    .cabin-article, 
+    .cabin-article-page  {
+        width: 75%;
+    }
+
+    .cabin-article img, 
+    .cabin-article-page img {
+        margin: 0 0 0 6vw;
+    }
+}
+
+/* Mobil -------------> */
+@media all and (max-width:360px) {
+   
+    .desktop-nav,
+    .header-img-desktop, 
+    .header-img-tablet,
+    .logo-desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    #mobile-list {
+        display: none;
+        list-style: none;
+        background-color: #00687D;
+        padding: 2%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #mobile-list a {
+        color: white;
+    }
+
+    .mobile-nav-list li{
+        margin: 0 0 2vh 0;
+    }
+
+    .logo-mobile {
+        display: block;
+        position: absolute;
+        top: 2vh;
+        left: 27vw;
+        width: 40vw;
+    }
+
+    #nav-icon {
+        display: block;
+        position: absolute;
+        top: 2vw;
+        right: 7vw;
+        color: white;
+        font-size: 30px;
+        z-index: 1;
+    }
+
+    .header-img-mobile {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Article */
+
+    .wrapper {
+        margin: 10vh 0 0 0;
+    }
+
+    .cabin-article {
+        width: 150%;
+        height: fit-content;
+        margin: 0 0 40% -6%;
+    }
+
+    .cabin-article img, 
+    .cabin-article-page img {
+        width: 100%;
+        height: auto;
+    }
+
+    article h2 {
+        font-size: 15px;
+    }
+
+    article p {
+        font-size: 10px;
+    }
+
+    article .button {
+        font-size: 10px;
+    }
+
+    /* Aside */
+    .info-aside {
+        width: 75%;
+        padding: 14%;
+        display: inline-block;
+        position: relative;
+        margin: 0 -6vw 0 0;
+        top: 0;
+    }
+
+    .cabin-article-page {
+        width: 150%;
+        height: fit-content;
+        margin: 0 0 40% -43%;
+    }
+
+    .news-article {
+        position: relative;
+        width: 69%;
+    }
+
+
+    /* Sommar & Vinter */
+
+    .underside-article, 
+    .underside-article-winter {
+        margin: 5vh 0 0 0;
+        padding: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-img {
+        width: 200%;
+        position: relative;
+        top: 3vh;
+        z-index: -1;
+        margin: 0 10vw 0 26vw;
+    }
+
+    .article-text, 
+    .article-text-winter {
+        width: 80%;
+        background-color: white;
+        margin: 0 1vw 2vh 11vw;
+    }
+
+    .article-text h4, 
+    .article-text-winter h4 {
+        font-size: 15px;
+    }
+
+    .article-text p, 
+    .article-text-winter p {
+        font-size: 10px;
+    }
+
+    .picture-container {
+        display: inline-block;
+        width: 20vw;
+        height: 40vw;
+    }
+
+    /* om oss/kontakt*/
+    .about-box {
+        border-radius: 0 0 0 0;
+        font-size: 15px;
+        padding: 6%;
+    }
+
+    .about-box h2 {
+        font-size: 35px;
+    }
+
+    form {
+        font-size: 10px;
+    }
+
+    input[type="submit"] {
+        border: none;
+        border-radius: 20px 0 20px 0;
+        padding: 1vh 3vh 1vh 3vh;
+        color: #00687D;
+        font-size: 10px;
+    }
+
+    /* Stugor */
+    .cabin-infobox {
+        margin: 5vh 0 11vh 13vw;
+    }
+
+    .cabin-infobox h2 {
+        font-size: 20px;
+    }
+
+    .cabin-article-page {
+        margin: 0 0 40% -62%;
+    }
+
+    .cabin-article-page h2 {
+        font-size: 15px;
+    }
+
+}
+
+/* Templates */
+
+.one-column-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+}
+
+.one-column-container article {
+    padding: 1rem;
+}
+
+.activities {
+    background-color: #00687D;
+    color: white;
+}

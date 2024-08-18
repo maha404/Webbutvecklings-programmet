@@ -1,0 +1,56 @@
+@model IEnumerable<book_collection.Model.Book>
+
+@{
+    ViewData["Title"] = "Bok-samling";
+}
+
+<h1>Bok-samling</h1>
+
+<p>
+    <a class="btn" asp-action="Create">Lägg till ny bok</a>
+</p>
+<form asp-controller="Book" asp-action="Index" method="get">
+    <p>
+        Sök 
+        <input type="text" name="SearchString" />
+        <input type="submit" value="Sök" />
+    </p>
+</form>
+<br>
+<table class="table">
+    <thead>
+        <tr class="book-table">
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td class="link-container">
+                <a asp-action="Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen"></i> Ändra</a> 
+                <a asp-action="Details" asp-route-id="@item.Id"><i class="fa-solid fa-info"></i> Info</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa-solid fa-trash-can"></i> Radera</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

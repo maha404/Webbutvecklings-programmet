@@ -1,0 +1,26 @@
+@* Här ska själva layouten finnas *@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Moment 3</title>
+    @* Inkludering av fontawesome ikoner *@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-link"><a asp-controller="Book" asp-action="Index">Visa böcker</a></li>
+            <li class="nav-link"><a asp-controller="Category" asp-action="Create">Lägg till kategori</a></li>
+            <li class="nav-link"><a asp-controller="Borrow" asp-action="Index">Låna en bok</a></li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+
+@RenderSection("Scripts", required: false)
+</body>
+</html>

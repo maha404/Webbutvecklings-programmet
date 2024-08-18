@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 40%;
+    margin-top: 5%;
+}
+
+nav {
+    background-color: rgb(201, 201, 201);
+    padding: 1%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, 
+a:visited {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;  
+    width: 100%;
+}
+
+th {
+    background-color: rgb(59, 59, 59);
+    padding: 2% 0 2% 0;
+    color: white;
+}
+
+td {
+    padding: 3%;
+    text-align: center;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    margin-top: 3%;
+}
+
+.btn, 
+input[type=submit], 
+.edit-btn {
+    background-color: #D6EEEE;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 2%;
+}
+
+.btn:hover {
+    background-color: #8fbebe;
+}
+
+select, 
+.form-control {
+    background-color: #D6EEEE;
+    border: none;
+    padding: 1%;
+}
+
+
+.back-btn {
+    margin: 5% 0 0 0;
+}

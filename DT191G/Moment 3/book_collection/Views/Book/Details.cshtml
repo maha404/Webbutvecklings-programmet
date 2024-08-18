@@ -1,0 +1,53 @@
+@model book_collection.Model.Book
+
+@{
+    ViewData["Title"] = "info";
+}
+
+<h1>Info</h1>
+
+<div>
+    <h4>Boken "@Html.DisplayFor(model => model.Title)"</h4>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <br>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <br>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <br>
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+    </dl>
+</div>
+<br>
+<div>
+    <a class="btn" asp-action="Edit" asp-route-id="@Model?.Id">Redigera</a>
+</div>
+<div class="back-btn">
+<a asp-action="Index">Tillbaka till listan</a>
+</div>
